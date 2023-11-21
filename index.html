@@ -1,65 +1,124 @@
-<!--Lesson #2-->
+<!--lesson#4-->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!--Document title in browser tabs-->
-    <title>HTML Basics</title>
-    <!--Document favicon in browser tabs-->
-    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
-    <!--Additional approach to add favicon-->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="apple-touch-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="114x114"
-      href="apple-touch-icon-114x114.png"
-    />
-    <!--SEO-->
-    <meta name="description" content="Test web page" />
-    <meta name="keywords" content="html, webdev, Yauhen" />
-    <meta name="author" content="Yauhen Kovalchuk" />
-    <!--For mobile devices-->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1 user-scalable=no"
-    />
-    <!--Use latest version of IE-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!--For external styles-->
-    <link rel="stylesheet" href="styles.css" />
-    <!--Local styles-->
-    <style>
-      div {
-        background-color: red;
-      }
-    </style>
-    <!--Local styles fonts-->
-    <link rel="stylesheet" href="styles.css" />
-    <!--Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
   <body>
-    [if="IE"]>
-    <p>This text you can see only in Internet Explorer</p>
-    [endif] [if="lt IE 10"]>
-    <p>You will see this text omly in IE9 and more later version</p>
-    [endif]
-    <!--External scripts files-->
-    <script src="main.js"></script>
-    <!--Local scripts-->
-    <script>
-      console.log("Hello, World!");
-    </script>
+    <!--Headings-->
+    <h1>Different headings</h1>
+    <h2>Different headings</h2>
+    <h3>Different headings</h3>
+    <h4>Different headings</h4>
+    <h5>Different headings</h5>
+    <h6>Different headings</h6>
+    <hr />
+    <!--Paragraph-->
+    <p>Simple paragraph with text.</p>
+    <hr />
+    <!--Information about author-->
+    <p>Here is my HTML Basics learning, which i had in 2023.</p>
+    <address>Savin Konstantin, student</address>
+    <hr />
+    <!--Qoute and author-->
+    <q>Hello, welcome to webDew channel</q>
+    <address>Savin Konstantin, student</address>
+    <hr />
+    <!--Block of Quote-->
+    <blockquote>
+      "Чтобы выполнить несколько инструкций в условии, используйте блочный
+      оператор ({...}) для группирования этих инструкций."
+    </blockquote>
+    <hr />
+    <!--Time or Date Information-->
+    <time>21.11.2023</time>
+    <br />
+    <time datetime="22.03.1982">My Birthday</time>
+    <hr />
+    <!--Bold & Italic, Typing, Deleted text-->
+    <b>Bold text</b>
+    <br />
+    <i>Italic text</i>
+    <br />
+    <tt>Typing text</tt>
+    <br />
+    <s>Deleted text</s>
+    <hr />
+    <!--Bold & Italic text with semantic accent-->
+    <strong>Bold accent text</strong>
+    <br />
+    <em>Italic accent text</em>
+    <hr />
+    <!--Code examples-->
+    <code>
+      " const args = { name : "Konstantin" age : 41 }; const getDate = [] => new
+      Date; "
+    </code>
+    <hr />
+    <!--Save text formatting-->
+    <pre>
+    <code>
+      "   const args = { 
+            name : "Konstantin"
+            age : 41
+          };
+          const getDate = [] => new Date;
+      "
+    </code>
+    </pre>
+    <hr />
+    <!--Small text-->
+    <small>Small</small>
+    <h2>
+      To know HTML
+      <small>semantic</small>
+      is important
+    </h2>
+    <hr />
+    <!--Big text-->
+    <big>Big</big>
+    <h2>
+      To know HTML
+      <big>semantic</big>
+      is important
+    </h2>
+    <hr />
+    <!--Deleted text-->
+    <del>Deleted</del>
+    <h2>
+      To know HTML
+      <del>semantic</del>
+      is important
+    </h2>
+    <hr />
+    <!--Inserted/added text-->
+    <ins>Inserted</ins>
+    <h2>
+      To know HTML
+      <ins>semantic</ins>
+      is important
+    </h2>
+    <hr />
+    <!--Subscripted text-->
+    <sub>Subscripted</sub>
+    <h2>
+      To know HTML
+      <sub>semantic</sub>
+      is important
+    </h2>
+    <h2>H<sub>2</sub>O</h2>
+    <hr />
+    <!--Superscripted text-->
+    <sup>Superscripted text</sup>
+    <h2>
+      To know HTML
+      <sup>semantic</sup>
+      is important
+    </h2>
+    <h2>X<sup>2</sup>=9</h2>
+    <hr />
   </body>
 </html>
