@@ -1,100 +1,29 @@
-<!--Lesson#5 Списки (Lists)-->
+<!--Lesson#6 Картинки (Images)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HTML5#5 (Lists)</title>
+        <title>Lesson#6 Images</title>
     </head>
     <body>
-        <!--Unordered list-->
-        <h5>Unordered list</h5>
-        <ul>
-            <li>Front-end Developer</li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ul>
-        <hr>
-        <!--Ordered list-->
-        <h5>Ordered list</h5>
-        <ol>
-            <li>Front-end Developer</li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ol>
-        <hr>
-        <!--Ordered list with start-->
-        <h5>
-            Ordered list with start
-        </h4>
-        <ol start="4">
-            <li>Front-end Developer</li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ol>
-        <hr>
-        <!--Ordered list reversed-->
-        <h5>Ordered list reversed</h5>
-        <ol reversed>
-            <li>Front-end Developer</li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ol>
-        <hr>
-        <!--Nested unordered list-->
-        <h5>Nested unordered list</h5>
-        <ul>
-            <li>
-                Front-end Developer
-                <ul>
-                    <li>Mobile</li>
-                    <li>UI</li>
-                    <li>Node.js</li>
-                </ul>
-            </li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ul>
-        <hr>
-        <!--Nested ordered list-->
-        <h5>Nested ordered list</h5>
-        <ol>
-            <li>
-                Front-end Developer
-                <ol>
-                    <li>Mobile</li>
-                    <li>UI</li>
-                    <li>Node.js</li>
-                </ol>
-            </li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ol>
-        <hr>
-        <!--Nested unordered list with Inner ordered list-->
-        <h5>Nested unordered list with Inner ordered list</h5>
-        <ul>
-            <li>
-                Front-end Developer
-                <ol>
-                    <li>Mobile</li>
-                    <li>UI</li>
-                    <li>Node.js</li>
-                </ol>
-            </li>
-            <li>Back-end Developer</li>
-            <li>Full-stack Developer</li>
-        </ul>
-        <hr>
-        <!--Description list-->
-        <h5>Description list</h5>
-        <dl>
-            <dt>Front-end Developer</dt>
-            <dd>A Front-End Developer is someone who creates websites and web applications.</dd>
-            <dt>Back-end Developer</dt>
-            <dd>A back-end developer is a type of programmer who creates the logical back-end and core computational logic of a website, software or information system.</dd>
-            <dt>Full-stack Developer</dt>
-            <dd>A full-stack developer is a developer or engineer who can build both the front end and the back end of a website.</dd>
-        </dl>
+        <!--Simple image-->
+        <h4>Simple image</h4>
+        <img src="Vinjent.jpeg" width="min-width" alt="Vinjent picture">
+        <!--Responsive image-->
+        <h4>Responsive image</h4>
+        <picture>
+            <source media="(min-width: 1024px)" srcset="946.jpg">
+            <source media="(min-width: 768px)" srcset="300.jpg">
+            <source media="(min-width: 360px)" srcset="100.jpg">
+            <img src="1600.jpg" alt="Default image">
+        </picture>
+        <h4>Images with semantic description</h4>
+        <figure>
+            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
+            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
+            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
+            <figcaption>This is a famous german music developer Vinjent</figcaption>
+        </figure>
     </body>
 </html>
