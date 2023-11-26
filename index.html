@@ -1,29 +1,162 @@
-<!--Lesson#6 Картинки (Images)-->
+<!--Lesson#7 Таблица (Table)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson#6 Images</title>
+        <link rel="stylesheet" href="style.css">
+        <title>Lesson#7 Table</title>
     </head>
     <body>
-        <!--Simple image-->
-        <h4>Simple image</h4>
-        <img src="Vinjent.jpeg" width="min-width" alt="Vinjent picture">
-        <!--Responsive image-->
-        <h4>Responsive image</h4>
-        <picture>
-            <source media="(min-width: 1024px)" srcset="946.jpg">
-            <source media="(min-width: 768px)" srcset="300.jpg">
-            <source media="(min-width: 360px)" srcset="100.jpg">
-            <img src="1600.jpg" alt="Default image">
-        </picture>
-        <h4>Images with semantic description</h4>
-        <figure>
-            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
-            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
-            <img src="Vinjent.jpeg" width="150" alt="Vinjent photo">
-            <figcaption>This is a famous german music developer Vinjent</figcaption>
-        </figure>
+        <H4>Minimum valid murkup for table</H4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h4>Table row with data</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                    <td>Back-end</td>
+                    <td>Full-stack</td>
+                    <td>QA</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h4>TAble column with data</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                </tr>
+                <tr>
+                    <td>Full-stack</td>
+                </tr>
+                <tr>
+                    <td>QA</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h4>Simple example of table</h4>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                    <td>1st person</td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                    <td>2nd person</td>
+                </tr>
+                <tr>
+                    <td>Full-stack</td>
+                    <td>3rd person</td>
+                </tr>
+                <tr>
+                    <td>QA</td>
+                    <td>4th person</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h4>Table witn caption</h4>
+        <table>
+            <caption>Team members list</caption>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                    <td>1st person</td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                    <td>2nd person</td>
+                </tr>
+                <tr>
+                    <td>Full-stack</td>
+                    <td>3rd person</td>
+                </tr>
+                <tr>
+                    <td>QA</td>
+                    <td>4th person</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <h4>Table with semantic sections</h4>
+        <table>
+            <caption>Team member list</caption>
+            <thead>
+                <td>Speciality</td>
+                <td>Quantity</td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                    <td>1st person</td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                    <td>2nd person</td>
+                </tr>
+                <tr>
+                    <td>Full-stack</td>
+                    <td>3rd person</td>
+                </tr>
+                <tr>
+                    <td>QA</td>
+                    <td>4th person</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td></td>
+                <td>15</td>
+            </tfoot>
+        </table>
+        <hr>
+        <h4>
+            Colspan in &#8249;tfoot&#8250;
+            <br>
+            and &#8249;th&#8250; tag for table head
+            <br>
+            and &#8249;rowspan&#8250; tag for merge cells
+        </h4>
+        <table>
+            <caption>Team member list</caption>
+            <thead>
+                <th>Speciality</th>
+                <th>Quantity</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Front-end</td>
+                    <td>1st person</td>
+                </tr>
+                <tr>
+                    <td>Back-end</td>
+                    <td>2nd person</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Full-stack</td>
+                    <td>3rd person</td>
+                </tr>
+                <tr>
+                    <!--                   <td>QA</td>-->
+                    <td>4th person</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="2">15</td>
+            </tfoot>
+        </table>
     </body>
 </html>
