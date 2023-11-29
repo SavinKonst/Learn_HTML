@@ -1,104 +1,213 @@
-<!--Lesson#9 Полезные тэги (Useful tags)-->
+<!--Lesson#11 Формы(Forms)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson#9 Useful tags</title>
+        <title>Lesson#11 Forms</title>
     </head>
     <body>
-        <h4>Abbriviation</h4>
-        <p>
-            <abbr title="HyperText Markup Language">HTML</abbr>
-            was created in 1993.
-        </p>
-        <hr>
-        <h4>List of options</h4>
-        <input list="Specialties" placeholder="specialties">
-        <datalist id="Specialties">
-            <option value="Front-end"></option>
-            <option value="Back-end"></option>
-            <option value="Full-stack"></option>
-            <option value="QA"></option>
-        </datalist>
-        <hr>
-        <h4>Meter</h4>
-        <meter
-            min="0"
-            max="100"
-            low="30"
-            optimum="60"
-            high="80"
-            value="20"
-        >Course progress</meter>
-        <br>
-        <meter
-            min="0"
-            max="100"
-            low="30"
-            optimum="60"
-            high="80"
-            value="40"
-        >Course progress</meter>
-        <br>
-        <meter
-            min="0"
-            max="100"
-            low="30"
-            optimum="60"
-            high="80"
-            value="60"
-        >Course progress</meter>
-        <br>
-        <meter
-            min="0"
-            max="100"
-            low="30"
-            optimum="60"
-            high="80"
-            value="80"
-        >Course progress</meter>
-        <br>
-        <meter
-            min="0"
-            max="100"
-            low="30"
-            optimum="60"
-            high="80"
-            value="100"
-        >Course progress</meter>
-        <hr>
-        <h4>Progress bar</h4>
-        <progress value="30" max="100"></progress>
-        <hr>
-        <h4>If in your browser scripts are swith off you see next:</h4>
-        <noscript id="noscripts">
-            <h4>No scripts tag</h4>
-            <p>Please swith on scripts in your browser!</p>
-        </noscript>
+        <h4>
+            <mark>Simple form</mark>
+        </h4>
+        <form action="formHandler.php" name="simple form" autocomplete="on">
+            <input type="text">
+            <br>
+            <select name="specialities">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="Full-stack">Full-stack</option>
+                <option value="QA">QA</option>
+            </select>
+            <br>
+            <textarea name="simple text" cols="45" rows="10"></textarea>
+            <br>
+            <input type="submit">
+        </form>
         <hr>
         <h4>
-            <mark> Marked text</mark>
+            <mark>Fieldset & Label</mark>
         </h4>
-        <h2>
-            To know - HTML
-            <mark>semantic</mark>
-            is important!
-        </h2>
+        <form action="formHandler.php" name="simple form2">
+            <fieldset>
+                <legend>Simple form legend</legend>
+                <input type="text">
+                <br>
+                <select name="specialities">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                    <option value="Full-stack">Full-stack</option>
+                    <option value="QA">QA</option>
+                </select>
+                <br>
+                <textarea name="simple text2" cols="45" rows="10"></textarea>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
         <hr>
-        <h4>Canvas</h4>
-        <canvas id="example" width="200" height="200"></canvas>
-        <script>
-         const drawingCanvas = document.getElementById('example');
-            if(drawingCanvas && drawingCanvas.getContext) {
-          const context = drawingCanvas.getContext('2d');
-          context.fillStyle = "#000";
-          context.beginPath();
-          context.arc(100,100,100,0,Math.PI*2,true);
-          context.closePath();
-          context.stroke();
-          context.fill();
-               }
-        </script>
+        <h4>
+            <mark>Inner fieldset & Label</mark>
+        </h4>
+        <form action="formHandler.php" name="simple form3">
+            <fieldset>
+                <legend>Personal data</legend>
+                <input type="text">
+                <br>
+                <select name="specialities">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                    <option value="Full-stack">Full-stack</option>
+                    <option value="QA">QA</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Personal message</legend>
+                <textarea name="simple text" cols="45" rows="10"></textarea>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <hr>
+        <h4>
+            <mark>Form element label</mark>
+        </h4>
+        <Label for="username">User name</Label>
+        <input type="text" name="user name" id="username">
+        <br>
+        <label>
+            Password
+            <input type="text" name="user Password">
+        </label>
+        <hr>
+        <h4>
+            <mark>Result form</mark>
+        </h4>
+        <form action="formHandler.php" name="simple form4">
+            <fieldset>
+                <legend>
+                    <b>Personal data</b>
+                </legend>
+                <label for="name">Enter your name</label>
+                <input type="text" id="name">
+                <br>
+                <label for="spec-select">Choose your spaciality</label>
+                <select name="specialities" id="spec-select">
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
+                    <option value="Full-stack">Full-stack</option>
+                    <option value="QA">QA</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <b>Personal message</b>
+                </legend>
+                <label for="usermessage">Enter your message</label>
+                <br>
+                <textarea
+                    name="simple text"
+                    id="usermessage"
+                    cols="45"
+                    rows="10"
+                ></textarea>
+                <br>
+                <input type="submit">
+            </fieldset>
+        </form>
+        <hr>
+        <h4>
+            <mark>Textarea</mark>
+        </h4>
+        <label>
+            Simple textarea
+            <br>
+            <textarea name="name2" cols="45" rows="10"></textarea>
+        </label>
+        <br>
+        <label>
+            Autofocus
+            <br>
+            <textarea cols="10" rows="10" autofocus></textarea>
+        </label>
+        <br>
+        <label>
+            Disabled textarea
+            <br>
+            <textarea cols="10" rows="10" disabled></textarea>
+        </label>
+        <br>
+        <label>
+            Read only
+            <br>
+            <textarea cols="10" rows="10" readonly>You can't chang this text</textarea>
+        </label>
+        <br>
+        <label>
+            Textarea with placeholder
+            <br>
+            <textarea cols="10" rows="10" placeholder="your message..."></textarea>
+        </label>
+        <br>
+        <label>
+            Max lenght in textarea 5 chars
+            <br>
+            <textarea cols="10" rows="10" maxlength="5"></textarea>
+        </label>
+        <br>
+        <label>
+            Required textarea
+            <br>
+            <textarea cols="10" rows="10" required></textarea>
+        </label>
+        <hr>
+        <h4>
+            <mark>Required attribute</mark>
+        </h4>
+        <form action="formHandler.php">
+            <textarea cols="10" rows="10" required></textarea>
+            <br>
+            <input type="submit" value="Send">
+        </form>
+        <hr>
+        <h4>
+            <mark>Select</mark>
+        </h4>
+        <select>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <hr>
+        <h4>
+            <mark>Select with optgroup</mark>
+        </h4>
+        <select>
+            <optgroup label="Speciality">
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+            </optgroup>
+            <optgroup label="Direction">
+                <option value="Full-stack">Full-stack</option>
+                <option value="QA">QA</option>
+            </optgroup>
+        </select>
+        <hr>
+        <h4>
+            <mark>Multiple select</mark>
+        </h4>
+        <select multiple>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end">Back-end</option>
+        </select>
+        <h4>
+            <mark>Different options</mark>
+        </h4>
+        <select>
+            <option value="Front-end">Front-end</option>
+            <option value="Back-end" label="Back-end"></option>
+            <option value="sel" selected>Selected</option>
+            <option value="dis" disabled>Disabled</option>
+        </select>
+        <hr>
     </body>
 </html>
