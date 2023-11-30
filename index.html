@@ -1,122 +1,66 @@
-<!--Lesson#13 Типы полей ввода (Input Types. Part 2)-->
+<!--Lesson#14 Видео и аудио файлы (Video & Audio)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson#13 Input Types. Part 2</title>
+        <title>lesson#14 Video & Audio</title>
     </head>
     <body>
         <h4>
-            <mark>Telephone</mark>
+            <mark>Audio</mark>
         </h4>
-        <input type="tel">
+        <audio src="Venjent_-_R_U_Guna_Move.mp3">Your browser does not support this audio tag...</audio>
         <hr>
         <h4>
-            <mark>Search</mark>
+            <mark>Video</mark>
         </h4>
-        <input type="search">
+        <video height="500">
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
         <h4>
-            <mark>Local date & time</mark>
+            <mark>Audio player</mark>
         </h4>
-        <input type="datetime-local">
+        <audio controls>
+            <source src="Venjent_-_R_U_Guna_Move.mp3" type="audio/mpeg">
+            Your browser does not support this audio tag...
+        </audio>
         <hr>
         <h4>
-            <mark>Month</mark>
+            <mark>Video</mark>
         </h4>
-        <input type="month">
+        <video height="500" controls>
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
-        <h4>
-            <mark>Time</mark>
-        </h4>
-        <input type="time">
+        <video height="500" controls loop>
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
-        <h4>
-            <mark>Week</mark>
-        </h4>
-        <input type="week">
+        <video height="500" autoplay controls>
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
-        <h4>
-            <mark>Hidden</mark>
-        </h4>
-        <input type="hidden">
+        <video height="500" muted controls>
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
-        <h4>
-            <mark>File</mark>
-        </h4>
-        <input type="file">
-        <br>
-        <input type="file" multiple>
-        <hr>
-        <h4>
-            <mark>Checkbox</mark>
-        </h4>
-        <input type="checkbox" name="1">
-        <br>
-        <input type="checkbox" name="1">
-        <br>
-        <input type="checkbox" name="1">
-        <hr>
-        <h4>
-            <mark>Radio</mark>
-        </h4>
-        <input type="radio" name="2">
-        <br>
-        <input type="radio" name="2">
-        <br>
-        <input type="radio" name="2">
-        <hr>
-        <h4>
-            <mark>Checkbox with checked element</mark>
-        </h4>
-        <input type="checkbox" name="1">
-        <br>
-        <input type="checkbox" name="1" checked>
-        <br>
-        <input type="checkbox" name="1">
-        <hr>
-        <h4>
-            <mark>Radio with checked element</mark>
-        </h4>
-        <input type="radio" name="2">
-        <br>
-        <input type="radio" name="2">
-        <br>
-        <input type="radio" name="2" checked>
-        <hr>
-        <h4>
-            <mark>Checkbox with label</mark>
-        </h4>
-        <label>
-            <input type="checkbox" name="1" checked>
-            Front-end
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="1" checked>
-            Back-end
-        </label>
-        <br>
-        <label>
-            <input type="checkbox" name="1">
-            Full-stack
-        </label>
-        <hr>
-        <h4>
-            <mark>Radio with label</mark>
-        </h4>
-        <label>
-            <input type="radio" name="2"> Front-end
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="2"> Back-end
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="2"> Full-stack
-        </label>
+        <video height="500" preload="metadata">
+            <source src="Venjent_-_R_U_Guna_Move.mp4" type="video/mp4">
+            <source src="videoplayback.webm" type="video/webm">
+            Your browser does not support the video tag
+        </video>
         <hr>
     </body>
 </html>
