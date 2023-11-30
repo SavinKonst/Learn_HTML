@@ -1,101 +1,122 @@
-<!--Lesson#12 Типы полей ввода (Input types. Part 1)-->
+<!--Lesson#13 Типы полей ввода (Input Types. Part 2)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson#12 Input types. Part 1</title>
+        <title>Lesson#13 Input Types. Part 2</title>
     </head>
     <body>
         <h4>
-            <mark>Input text</mark>
+            <mark>Telephone</mark>
         </h4>
-        <input type="text">
+        <input type="tel">
         <hr>
         <h4>
-            <mark>Input number</mark>
+            <mark>Search</mark>
         </h4>
-        <fieldset>
-            <input type="number">
-            <br>
-            <input type="number" min="1" max="10">
-            <br>
-            <input type="number" step="2">
-            <br>
-        </fieldset>
+        <input type="search">
         <hr>
         <h4>
-            <mark>Password</mark>
+            <mark>Local date & time</mark>
         </h4>
-        <input type="password">
+        <input type="datetime-local">
         <hr>
         <h4>
-            <mark>Range</mark>
+            <mark>Month</mark>
         </h4>
-        <input type="range">
+        <input type="month">
         <hr>
         <h4>
-            <mark>Date</mark>
+            <mark>Time</mark>
         </h4>
-        <input type="date">
+        <input type="time">
         <hr>
         <h4>
-            <mark>Color</mark>
+            <mark>Week</mark>
         </h4>
-        <input type="color">
+        <input type="week">
         <hr>
         <h4>
-            <mark>Submit & Reset buttons</mark>
+            <mark>Hidden</mark>
         </h4>
-        <fieldset>
-            <input type="submit">
-            <br>
-            <input type="reset">
-        </fieldset>
+        <input type="hidden">
+        <hr>
         <h4>
-            <mark>Submit & Reset buttons with custom labels</mark>
+            <mark>File</mark>
         </h4>
-        <input type="submit" value="Submit">
+        <input type="file">
         <br>
-        <input type="reset" value="Reset">
+        <input type="file" multiple>
         <hr>
         <h4>
-            <mark>List of options</mark>
+            <mark>Checkbox</mark>
         </h4>
-        <input
-            type="text"
-            list="data"
-            autofocus
-            placeholder="choose.."
-        >
-        <datalist id="data">
-            <option value="Front-end">Front-end</option>
-            <option value="Back-end">Back-end</option>
-            <option value="Full-stack">Full-stack</option>
-            <option value="QA">QA</option>
-        </datalist>
+        <input type="checkbox" name="1">
+        <br>
+        <input type="checkbox" name="1">
+        <br>
+        <input type="checkbox" name="1">
         <hr>
         <h4>
-            <mark>E-mail</mark>
+            <mark>Radio</mark>
         </h4>
-        <input type="email">
+        <input type="radio" name="2">
+        <br>
+        <input type="radio" name="2">
+        <br>
+        <input type="radio" name="2">
         <hr>
         <h4>
-            <mark>URL</mark>
+            <mark>Checkbox with checked element</mark>
         </h4>
-        <input type="url">
+        <input type="checkbox" name="1">
+        <br>
+        <input type="checkbox" name="1" checked>
+        <br>
+        <input type="checkbox" name="1">
         <hr>
         <h4>
-            <mark>Input by image</mark>
+            <mark>Radio with checked element</mark>
         </h4>
-        <input
-            type="image"
-            name="input"
-            id="input"
-            alt="Send"
-            src="smile.jpg"
-            height="50"
-        >
+        <input type="radio" name="2">
+        <br>
+        <input type="radio" name="2">
+        <br>
+        <input type="radio" name="2" checked>
+        <hr>
+        <h4>
+            <mark>Checkbox with label</mark>
+        </h4>
+        <label>
+            <input type="checkbox" name="1" checked>
+            Front-end
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="1" checked>
+            Back-end
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="1">
+            Full-stack
+        </label>
+        <hr>
+        <h4>
+            <mark>Radio with label</mark>
+        </h4>
+        <label>
+            <input type="radio" name="2"> Front-end
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="2"> Back-end
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="2"> Full-stack
+        </label>
         <hr>
     </body>
 </html>
