@@ -1,213 +1,101 @@
-<!--Lesson#11 Формы(Forms)-->
+<!--Lesson#12 Типы полей ввода (Input types. Part 1)-->
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lesson#11 Forms</title>
+        <title>Lesson#12 Input types. Part 1</title>
     </head>
     <body>
         <h4>
-            <mark>Simple form</mark>
+            <mark>Input text</mark>
         </h4>
-        <form action="formHandler.php" name="simple form" autocomplete="on">
-            <input type="text">
+        <input type="text">
+        <hr>
+        <h4>
+            <mark>Input number</mark>
+        </h4>
+        <fieldset>
+            <input type="number">
             <br>
-            <select name="specialities">
-                <option value="Front-end">Front-end</option>
-                <option value="Back-end">Back-end</option>
-                <option value="Full-stack">Full-stack</option>
-                <option value="QA">QA</option>
-            </select>
+            <input type="number" min="1" max="10">
             <br>
-            <textarea name="simple text" cols="45" rows="10"></textarea>
+            <input type="number" step="2">
             <br>
+        </fieldset>
+        <hr>
+        <h4>
+            <mark>Password</mark>
+        </h4>
+        <input type="password">
+        <hr>
+        <h4>
+            <mark>Range</mark>
+        </h4>
+        <input type="range">
+        <hr>
+        <h4>
+            <mark>Date</mark>
+        </h4>
+        <input type="date">
+        <hr>
+        <h4>
+            <mark>Color</mark>
+        </h4>
+        <input type="color">
+        <hr>
+        <h4>
+            <mark>Submit & Reset buttons</mark>
+        </h4>
+        <fieldset>
             <input type="submit">
-        </form>
+            <br>
+            <input type="reset">
+        </fieldset>
+        <h4>
+            <mark>Submit & Reset buttons with custom labels</mark>
+        </h4>
+        <input type="submit" value="Submit">
+        <br>
+        <input type="reset" value="Reset">
         <hr>
         <h4>
-            <mark>Fieldset & Label</mark>
+            <mark>List of options</mark>
         </h4>
-        <form action="formHandler.php" name="simple form2">
-            <fieldset>
-                <legend>Simple form legend</legend>
-                <input type="text">
-                <br>
-                <select name="specialities">
-                    <option value="Front-end">Front-end</option>
-                    <option value="Back-end">Back-end</option>
-                    <option value="Full-stack">Full-stack</option>
-                    <option value="QA">QA</option>
-                </select>
-                <br>
-                <textarea name="simple text2" cols="45" rows="10"></textarea>
-                <br>
-                <input type="submit">
-            </fieldset>
-        </form>
-        <hr>
-        <h4>
-            <mark>Inner fieldset & Label</mark>
-        </h4>
-        <form action="formHandler.php" name="simple form3">
-            <fieldset>
-                <legend>Personal data</legend>
-                <input type="text">
-                <br>
-                <select name="specialities">
-                    <option value="Front-end">Front-end</option>
-                    <option value="Back-end">Back-end</option>
-                    <option value="Full-stack">Full-stack</option>
-                    <option value="QA">QA</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <legend>Personal message</legend>
-                <textarea name="simple text" cols="45" rows="10"></textarea>
-                <br>
-                <input type="submit">
-            </fieldset>
-        </form>
-        <hr>
-        <h4>
-            <mark>Form element label</mark>
-        </h4>
-        <Label for="username">User name</Label>
-        <input type="text" name="user name" id="username">
-        <br>
-        <label>
-            Password
-            <input type="text" name="user Password">
-        </label>
-        <hr>
-        <h4>
-            <mark>Result form</mark>
-        </h4>
-        <form action="formHandler.php" name="simple form4">
-            <fieldset>
-                <legend>
-                    <b>Personal data</b>
-                </legend>
-                <label for="name">Enter your name</label>
-                <input type="text" id="name">
-                <br>
-                <label for="spec-select">Choose your spaciality</label>
-                <select name="specialities" id="spec-select">
-                    <option value="Front-end">Front-end</option>
-                    <option value="Back-end">Back-end</option>
-                    <option value="Full-stack">Full-stack</option>
-                    <option value="QA">QA</option>
-                </select>
-            </fieldset>
-            <fieldset>
-                <legend>
-                    <b>Personal message</b>
-                </legend>
-                <label for="usermessage">Enter your message</label>
-                <br>
-                <textarea
-                    name="simple text"
-                    id="usermessage"
-                    cols="45"
-                    rows="10"
-                ></textarea>
-                <br>
-                <input type="submit">
-            </fieldset>
-        </form>
-        <hr>
-        <h4>
-            <mark>Textarea</mark>
-        </h4>
-        <label>
-            Simple textarea
-            <br>
-            <textarea name="name2" cols="45" rows="10"></textarea>
-        </label>
-        <br>
-        <label>
-            Autofocus
-            <br>
-            <textarea cols="10" rows="10" autofocus></textarea>
-        </label>
-        <br>
-        <label>
-            Disabled textarea
-            <br>
-            <textarea cols="10" rows="10" disabled></textarea>
-        </label>
-        <br>
-        <label>
-            Read only
-            <br>
-            <textarea cols="10" rows="10" readonly>You can't chang this text</textarea>
-        </label>
-        <br>
-        <label>
-            Textarea with placeholder
-            <br>
-            <textarea cols="10" rows="10" placeholder="your message..."></textarea>
-        </label>
-        <br>
-        <label>
-            Max lenght in textarea 5 chars
-            <br>
-            <textarea cols="10" rows="10" maxlength="5"></textarea>
-        </label>
-        <br>
-        <label>
-            Required textarea
-            <br>
-            <textarea cols="10" rows="10" required></textarea>
-        </label>
-        <hr>
-        <h4>
-            <mark>Required attribute</mark>
-        </h4>
-        <form action="formHandler.php">
-            <textarea cols="10" rows="10" required></textarea>
-            <br>
-            <input type="submit" value="Send">
-        </form>
-        <hr>
-        <h4>
-            <mark>Select</mark>
-        </h4>
-        <select>
+        <input
+            type="text"
+            list="data"
+            autofocus
+            placeholder="choose.."
+        >
+        <datalist id="data">
             <option value="Front-end">Front-end</option>
             <option value="Back-end">Back-end</option>
-        </select>
+            <option value="Full-stack">Full-stack</option>
+            <option value="QA">QA</option>
+        </datalist>
         <hr>
         <h4>
-            <mark>Select with optgroup</mark>
+            <mark>E-mail</mark>
         </h4>
-        <select>
-            <optgroup label="Speciality">
-                <option value="Front-end">Front-end</option>
-                <option value="Back-end">Back-end</option>
-            </optgroup>
-            <optgroup label="Direction">
-                <option value="Full-stack">Full-stack</option>
-                <option value="QA">QA</option>
-            </optgroup>
-        </select>
+        <input type="email">
         <hr>
         <h4>
-            <mark>Multiple select</mark>
+            <mark>URL</mark>
         </h4>
-        <select multiple>
-            <option value="Front-end">Front-end</option>
-            <option value="Back-end">Back-end</option>
-        </select>
+        <input type="url">
+        <hr>
         <h4>
-            <mark>Different options</mark>
+            <mark>Input by image</mark>
         </h4>
-        <select>
-            <option value="Front-end">Front-end</option>
-            <option value="Back-end" label="Back-end"></option>
-            <option value="sel" selected>Selected</option>
-            <option value="dis" disabled>Disabled</option>
-        </select>
+        <input
+            type="image"
+            name="input"
+            id="input"
+            alt="Send"
+            src="smile.jpg"
+            height="50"
+        >
         <hr>
     </body>
 </html>
